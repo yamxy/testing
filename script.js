@@ -31,11 +31,5 @@ function generate(){
 }
 
 function myFunction() {
-  var x = document.getElementById("myDIV");
-  if (x.style.display === "hidden") {
-    x.style.display = "block";
-  } 
-  else {
-    x.style.display = "hidden";
-  }
+   document.getElementById("myDIV").style.display == "none";
 }

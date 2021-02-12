@@ -31,5 +31,5 @@ function generate(){
 }
 
 function myFunction() {
-   document.getElementById("myDIV").style.display == "none";
+   document.getElementById("myDIV").style.display = "none";
 }

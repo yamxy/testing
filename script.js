@@ -19,7 +19,7 @@ function generate(){
       "- say the name SEVENTEEEEN!": '"The best time to plant a tree was 20 years ago. The second best time is now."',
     };
     var keys = Object.keys(letter);
-    var author = keys[Math.floor(Math.random() * keys.length)];y
+    var author = keys[Math.floor(Math.random() * keys.length)];
     var message = letter[author]
   
     document.getElementById("message").innerHTML = message;

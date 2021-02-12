@@ -32,10 +32,10 @@ function generate(){
 
 function myFunction() {
   var x = document.getElementById("myDIV");
-  if (x.style.display === "block") {
-    x.style.display = "none";
+  if (x.style.display === "hidden") {
+    x.style.display = "block";
   } 
   else {
-    x.style.display = "hidden";
+    x.style.display = "block";
   }
 }

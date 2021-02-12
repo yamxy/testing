@@ -1,5 +1,5 @@
 function generate(){
-    var quotes = {
+    var letter = {
       "- reason numba juan": '"Your tiny little baby face :)"',
       "- reason #2": '"The Pessimist Sees Difficulty In Every Opportunity. The Optimist Sees Opportunity In Every Difficulty."',
       "- raisin number tree": '"Don’t Let Yesterday Take Up Too Much Of Today."',
@@ -18,18 +18,14 @@ function generate(){
       "- 6teen life is sweet gonna make the good times last": '"The mind is everything. What you think you become."',
       "- say the name SEVENTEEEEN!": '"The best time to plant a tree was 20 years ago. The second best time is now."',
     };
+    var keys = Object.keys(letter);
+    var author = keys[Math.floor(Math.random() * keys.length)];y
+    var message = letter[author]
   
-    // grab all the keys in the dictionary (authors)
-    var keys = Object.keys(quotes);
-    // grab a random key (author) and store it in author
-    var author = keys[Math.floor(Math.random() * keys.length)];
-    // grab the value(quote) that belongs to that key
-    var quote = quotes[author]
-  
-    document.getElementById("quote").innerHTML = quote;
+    document.getElementById("message").innerHTML = message;
     document.getElementById("author").innerHTML = author;
 }
 
-function myFunction() {
-   document.getElementById("myDIV").style.display = "none";
+function resetText() {
+   document.getElementById("welcome").style.display = "none";
 }

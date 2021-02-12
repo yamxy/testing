@@ -1,5 +1,5 @@
 function generate(){
-    var letter = {
+    var letters = {
       "- reason numba juan": '"Your tiny little baby face :)"',
       "- reason #2": '"The Pessimist Sees Difficulty In Every Opportunity. The Optimist Sees Opportunity In Every Difficulty."',
       "- raisin number tree": '"Don’t Let Yesterday Take Up Too Much Of Today."',
@@ -20,12 +20,12 @@ function generate(){
     };
     var keys = Object.keys(letter);
     var author = keys[Math.floor(Math.random() * keys.length)];
-    var message = letter[author]
+    var letter = letters[author]
   
-    document.getElementById("message").innerHTML = message;
+    document.getElementById("letter").innerHTML = letter;
     document.getElementById("author").innerHTML = author;
 }
 
 function resetText() {
-   document.getElementById("welcome").style.display = "none";
+   document.getElementById("welcome").style.display == "none";
 }
